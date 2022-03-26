@@ -1,0 +1,71 @@
+<%- include('partials/header') %>
+
+<section class="contact-wrap">
+
+    <div class="prompt">
+        <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger alert-dismissable fade show" role="alert">
+            <%= error %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+        <div class="alert alert-success alert-dismissable fade show" role="alert">
+            <%= success %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <% } %>
+    </div>
+
+    <div class="contact-inner">
+        <div class="contact-content">
+            <legend class="text-center">Contact us</legend>
+            <div class="contact-form">
+                <div class="">
+                    <form action="/contact" method="POST">
+
+                        <!-- Name input-->
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <div class="col-12">
+                                <input id="name" name="name" type="text" placeholder="Steve Smith" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Email input-->
+                        <div class="form-group">
+                            <label class="form-label" for="email">E-mail</label>
+                            <div class="col-12">
+                                <input id="email" name="email" type="text" placeholder="MisterSmith@generic.com"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+
+                        <!-- Message body -->
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <div class="col-12">
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Please enter your message here..." rows="5" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

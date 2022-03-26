@@ -1,0 +1,121 @@
+body {
+    background-image: url('/imgs/bg_contact_us.jpg'); 
+    height: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: auto; 
+    position: relative;
+}      
+.container {padding-top:20px;}
+
+.row {
+    justify-content: center;
+}
+
+
+
+.contact-wrap {
+    min-height: 100%;
+    background-color: rgb(150,20,50, 0);
+}
+.contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.6667em;
+}
+.contact-content {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.75), 0 .5rem 1rem rgba(0,0,0,.5), 0 .125rem .25rem rgba(0,0,0,.75);
+    background-color: #fff;
+    border-radius: .3em;
+    margin-top: 1.6667em;
+    padding: 1.6667em 0 1px;
+}
+.contact-form {
+    margin-bottom: 3.3334em;
+    padding: 0 1.6667em;
+}
+.form-label {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0 0 .3334em;
+    color: #242424;
+}
+.form-group {
+    margin-bottom: .6667em;
+}
+.form-group .btn {
+    background-color: #f2f2f2;
+    color: #242424;
+    border: 1px solid #fff;
+    background-color: #ee3000;
+    color: #f1f1f1;
+    border: 1px solid #fff;
+    width: 100%;
+}
+.form-group .btn:hover {
+    background-color: #9d0208;
+    color: #f1f1f1;
+    border: 1px solid #9d0208;
+}
+textarea.form-control {
+    resize: none;
+}
+.form-control:focus {
+    border-color: #eec0a0;
+    box-shadow: 0 0 0 0.2rem rgba(255,123,123,.25);
+}
+.form-control::placeholder {
+    color: #bbb;
+}
+
+
+.navbar-nav .nav-item a.nav-link {
+    /* color: #ee3000; */
+    padding-bottom: .13334em;
+    transition: color .5s ease;
+}
+.link-after {
+    width: 0;
+    margin: auto;
+    height: 2px;
+    background: #ee3000;
+    border-radius: .3em;
+    transition: width .5s ease;
+}
+.navbar-nav .nav-item a.nav-link:hover + .link-after{
+    width: 50%;
+}
+.navbar-nav .nav-item a.nav-link:hover {
+    color: #ee3000;
+}
+
+/* Alert */
+.prompt {
+    text-align: center;
+    padding: 3.666em 0 0;
+}
+
+/* Color Schemes */
+
+/* Black White Red */
+/* body {
+    color: #2b2d42;
+    color: #8d99ae;
+    color: #edf2f4;
+    color: #ef233c;
+    color: #d90429;
+} */
+
+/* Fire */
+/* body {
+    color: #03071e;
+    color: #370617;
+    color: #6a040f;
+    color: #9d0208;
+    color: #d00000;
+    color: #dc2f02;
+    color: #e85d04;
+    color: #f48c06;
+    color: #faa307;
+    color: #ffba08;
+} */
